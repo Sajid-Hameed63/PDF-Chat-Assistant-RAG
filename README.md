@@ -14,6 +14,10 @@ A Streamlit-based AI chatbot that allows users to upload PDF documents, process 
 
 ---
 
+## Deployment
+
+🚀 This application is **deployed on Hugging Face Space** for easy access and usage. You can try it out [here](https://huggingface.co/spaces/sajidhameed63/QA-PDFs-Langchain-Pinecone). 
+
 ## 🛠️ Setup & Installation
 
 ### 1️⃣ Clone the Repository
@@ -45,10 +49,16 @@ PINECONE_API_KEY=your_pinecone_api_key
 
 ## 🏃‍♂️ Running the Application
 ```sh
- docker build -t rag-app-gemini .
- docker run -p 8500:8500 --env-file .env rag-app-gemini
+ sudo docker build -t pdf-chat-rag-assistant:v1.0 .
+ sudo docker run --env-file .env -p 8500:8501 pdf-chat-rag-assistant:v1.0
 ```
 
+Now access the app on [link](http://localhost:8500/). 
+
+Or pull docker image from DockerHUb account
+```sh
+sudo docker pull sajidhameed63/pdf-chat-rag-assistant:v1.0
+```
 ---
 
 ## 🔍 How It Works

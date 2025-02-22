@@ -25,6 +25,6 @@ EXPOSE 8500
 # Run the Streamlit app (dotenv will be loaded at runtime)
 CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
 
-# sudo docker build -t rag-:v1.0 .
-# docker run --env-file .env -p 8500:8500 pdf-chat-rag-assistant:v1.0
+# sudo docker build -t pdf-chat-rag-assistant:v1.0 .
+# sudo docker run --env-file .env -p 8500:8501 pdf-chat-rag-assistant:v1.0
 
